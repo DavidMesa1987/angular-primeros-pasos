@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>DBZ Personajes</h1>
+    <hr/>
+    <div class="row">
+        <div class="col">
+            <dbz-list [list]="listPrson" (indexPerson)="deletePersonById($event)"></dbz-list>
+        </div>
+        <div class="col">
+            <add-dbz-person (onEmiterPerson)="onListenPeron($event)"></add-dbz-person>
+        </div>
+    </div>
+</div>

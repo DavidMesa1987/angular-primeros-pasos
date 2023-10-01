@@ -1,0 +1,18 @@
+<h1 class="fs-2 text-decoration-underline">{{name}}</h1>
+<dl>
+    <td>Nombre:</td>
+    <dd class="fs-3">{{name}}</dd>
+
+    <td>Edad:</td>
+    <dd class="fs-3">{{age}}</dd>
+
+    <td>Metodo:</td>
+    <dd class="fs-3">{{getHeroeDescription()}}</dd>
+
+    <td>Capitalizado:</td>
+    <dd class="fs-3">{{capitalizedName}}</dd>
+</dl>
+
+<button type="button" class="btn btn-primary"   (click)="changeHeroe()" *ngIf="name !=='Spiderman'">Cambiar Nombre</button>
+<button type="button" class="btn btn-info mx-2" (click)="changeAge()" *ngIf="age !==32">  Cambiar Edad</button>
+<button type="button" class="btn btn-success mx-2" (click)="reset()">  Reset</button>

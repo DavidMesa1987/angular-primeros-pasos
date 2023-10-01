@@ -1,0 +1,9 @@
+<h4>Agregar</h4>
+<form class="row" (submit)="emitPerson()">
+    <input type="text" [(ngModel)]="person.name"class="form-control mb-2" placeholder="Nombre" name="nameDbz" >
+    <input type="text" [(ngModel)]="person.power" class="form-control mb-2" placeholder="Power" name="powerDbz">
+    <button type="submit" class="btn btn-primary">Agregar</button>
+    <!--<span>
+        {{person | json}}
+    </span>-->
+</form>
